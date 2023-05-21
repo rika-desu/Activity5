@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 
-Public Class formUpload
+Public Class FormUpload
     Private Sub ButtonUpload_Click(sender As Object, e As EventArgs) Handles ButtonUpload.Click
         ' Show the Open File dialog.
         Dim openFileDialog As New OpenFileDialog()

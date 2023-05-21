@@ -342,20 +342,41 @@ Partial Class AdminDashboard
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
 
+    Private Sub LogoutBT_Click(sender As Object, e As EventArgs) Handles LogoutBT.Click
+        Me.Close()
+        MyLoginForm.Show()
+    End Sub
+
     Private Sub EditStudentBT_Click(sender As Object, e As EventArgs) Handles EditStudentBT.Click
         EditStudent.Show()
+    End Sub
+
+    Private Sub ViewStudentBT_Click(sender As Object, e As EventArgs) Handles ViewStudentBT.Click
+        ViewStudent.Show()
     End Sub
 
     Private Sub EditInstructorBT_Click(sender As Object, e As EventArgs) Handles EditInstructorBT.Click
         EditInstructor.Show()
     End Sub
 
+    Private Sub ViewInstructorBT_Click(sender As Object, e As EventArgs) Handles ViewInstructorBT.Click
+        ViewInstructor.Show()
+    End Sub
+
     Private Sub EditDepartmentBT_Click(sender As Object, e As EventArgs) Handles EditDepartmentBT.Click
         EditDepartment.Show()
     End Sub
 
+    Private Sub ViewDepartmentBT_Click(sender As Object, e As EventArgs) Handles ViewDepartmentBT.Click
+        ViewDepartment.Show()
+    End Sub
+
     Private Sub EditSubjectBT_Click(sender As Object, e As EventArgs) Handles EditSubjectBT.Click
         EditSubject.Show()
+    End Sub
+
+    Private Sub ViewSubjectBT_Click(sender As Object, e As EventArgs) Handles ViewSubjectBT.Click
+        ViewSubject.Show()
     End Sub
 
     Private Sub ButtonUpload_Click(sender As Object, e As EventArgs) Handles ButtonUpload.Click

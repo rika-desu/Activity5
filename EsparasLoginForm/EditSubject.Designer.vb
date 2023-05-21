@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class EditSubject
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,82 +20,65 @@ Partial Class EditSubject
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim TextBox2 As System.Windows.Forms.TextBox
-        Dim TextBox3 As System.Windows.Forms.TextBox
-        Dim TextBox1 As System.Windows.Forms.TextBox
-        Dim TextBox4 As System.Windows.Forms.TextBox
-        Dim TextBox5 As System.Windows.Forms.TextBox
+        Me.textSubjectID = New System.Windows.Forms.TextBox()
+        Me.textSubjectName = New System.Windows.Forms.TextBox()
+        Me.textInstructorID = New System.Windows.Forms.TextBox()
+        Me.TextSearch = New System.Windows.Forms.TextBox()
         Me.UpdateBT = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.AddBT = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LogoutBT = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.adminDashboard = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.DeleteBT = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        TextBox2 = New System.Windows.Forms.TextBox()
-        TextBox3 = New System.Windows.Forms.TextBox()
-        TextBox1 = New System.Windows.Forms.TextBox()
-        TextBox4 = New System.Windows.Forms.TextBox()
-        TextBox5 = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox2
+        'textSubjectID
         '
-        TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        TextBox2.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        TextBox2.Location = New System.Drawing.Point(328, 215)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New System.Drawing.Size(320, 30)
-        TextBox2.TabIndex = 53
+        Me.textSubjectID.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.textSubjectID.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.textSubjectID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.textSubjectID.Location = New System.Drawing.Point(328, 215)
+        Me.textSubjectID.Name = "textSubjectID"
+        Me.textSubjectID.Size = New System.Drawing.Size(320, 30)
+        Me.textSubjectID.TabIndex = 53
         '
-        'TextBox3
+        'textSubjectName
         '
-        TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        TextBox3.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        TextBox3.Location = New System.Drawing.Point(328, 256)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New System.Drawing.Size(320, 30)
-        TextBox3.TabIndex = 50
+        Me.textSubjectName.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.textSubjectName.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.textSubjectName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.textSubjectName.Location = New System.Drawing.Point(328, 267)
+        Me.textSubjectName.Name = "textSubjectName"
+        Me.textSubjectName.Size = New System.Drawing.Size(320, 30)
+        Me.textSubjectName.TabIndex = 50
         '
-        'TextBox1
+        'textInstructorID
         '
-        TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        TextBox1.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        TextBox1.Location = New System.Drawing.Point(553, 119)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New System.Drawing.Size(173, 30)
-        TextBox1.TabIndex = 49
+        Me.textInstructorID.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.textInstructorID.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.textInstructorID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.textInstructorID.Location = New System.Drawing.Point(328, 319)
+        Me.textInstructorID.Name = "textInstructorID"
+        Me.textInstructorID.Size = New System.Drawing.Size(320, 30)
+        Me.textInstructorID.TabIndex = 57
         '
-        'TextBox4
+        'TextSearch
         '
-        TextBox4.Anchor = System.Windows.Forms.AnchorStyles.None
-        TextBox4.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        TextBox4.Location = New System.Drawing.Point(328, 297)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New System.Drawing.Size(320, 30)
-        TextBox4.TabIndex = 57
-        '
-        'TextBox5
-        '
-        TextBox5.Anchor = System.Windows.Forms.AnchorStyles.None
-        TextBox5.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TextBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        TextBox5.Location = New System.Drawing.Point(328, 338)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New System.Drawing.Size(320, 30)
-        TextBox5.TabIndex = 59
+        Me.TextSearch.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextSearch.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TextSearch.Location = New System.Drawing.Point(553, 119)
+        Me.TextSearch.Name = "TextSearch"
+        Me.TextSearch.Size = New System.Drawing.Size(173, 30)
+        Me.TextSearch.TabIndex = 49
         '
         'UpdateBT
         '
@@ -143,7 +126,7 @@ Partial Class EditSubject
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Label3.Location = New System.Drawing.Point(167, 259)
+        Me.Label3.Location = New System.Drawing.Point(167, 270)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(117, 23)
         Me.Label3.TabIndex = 51
@@ -174,30 +157,30 @@ Partial Class EditSubject
         Me.LogoutBT.Text = "Logout"
         Me.LogoutBT.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnSearch
         '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button1.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 8.0!, System.Drawing.FontStyle.Bold)
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(737, 117)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 34)
-        Me.Button1.TabIndex = 48
-        Me.Button1.Text = "Search"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.btnSearch.BackColor = System.Drawing.Color.Gainsboro
+        Me.btnSearch.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnSearch.Location = New System.Drawing.Point(737, 117)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(91, 34)
+        Me.btnSearch.TabIndex = 48
+        Me.btnSearch.Text = "Search"
+        Me.btnSearch.UseVisualStyleBackColor = False
         '
-        'Label1
+        'adminDashboard
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 8.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(20, 24)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 19)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Admin Dashboard"
+        Me.adminDashboard.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.adminDashboard.AutoSize = True
+        Me.adminDashboard.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.adminDashboard.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.adminDashboard.Location = New System.Drawing.Point(20, 24)
+        Me.adminDashboard.Name = "adminDashboard"
+        Me.adminDashboard.Size = New System.Drawing.Size(121, 19)
+        Me.adminDashboard.TabIndex = 0
+        Me.adminDashboard.Text = "Admin Dashboard"
         '
         'Label4
         '
@@ -206,7 +189,7 @@ Partial Class EditSubject
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Label4.Location = New System.Drawing.Point(167, 300)
+        Me.Label4.Location = New System.Drawing.Point(167, 322)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(106, 23)
         Me.Label4.TabIndex = 58
@@ -231,24 +214,11 @@ Partial Class EditSubject
         Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.LogoutBT)
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.adminDashboard)
         Me.Panel1.Location = New System.Drawing.Point(38, 27)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(790, 60)
         Me.Panel1.TabIndex = 47
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Yu Gothic UI Semibold", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Label5.Location = New System.Drawing.Point(167, 341)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(92, 23)
-        Me.Label5.TabIndex = 60
-        Me.Label5.Text = "Student ID"
         '
         'EditSubject
         '
@@ -256,21 +226,20 @@ Partial Class EditSubject
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(874, 532)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(TextBox5)
         Me.Controls.Add(Me.UpdateBT)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.AddBT)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(TextBox2)
-        Me.Controls.Add(TextBox3)
-        Me.Controls.Add(TextBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.textSubjectID)
+        Me.Controls.Add(Me.textSubjectName)
+        Me.Controls.Add(Me.TextSearch)
+        Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(TextBox4)
+        Me.Controls.Add(Me.textInstructorID)
         Me.Controls.Add(Me.DeleteBT)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "EditSubject"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EditCourse"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -285,10 +254,19 @@ Partial Class EditSubject
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents LogoutBT As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents btnSearch As Button
+    Friend WithEvents adminDashboard As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents DeleteBT As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label5 As Label
+
+    Private Sub adminDashboard_Click(sender As Object, e As EventArgs) Handles adminDashboard.Click
+        Me.Close()
+        adminDashboard.Show()
+    End Sub
+
+    Friend WithEvents TextSearch As TextBox
+    Friend WithEvents textSubjectID As TextBox
+    Friend WithEvents textSubjectName As TextBox
+    Friend WithEvents textInstructorID As TextBox
 End Class

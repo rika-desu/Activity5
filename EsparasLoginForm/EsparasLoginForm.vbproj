@@ -14,6 +14,21 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +61,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
@@ -114,7 +132,10 @@
     <Compile Include="AdminDashboard.Designer.vb">
       <DependentUpon>AdminDashboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="AdminDashboard.vb" />
+    <Compile Include="AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="EditSubject.Designer.vb">
       <DependentUpon>EditSubject.vb</DependentUpon>
     </Compile>
@@ -124,7 +145,9 @@
     <Compile Include="EditInstructor.Designer.vb">
       <DependentUpon>EditInstructor.vb</DependentUpon>
     </Compile>
-    <Compile Include="EditInstructor.vb" />
+    <Compile Include="EditInstructor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EditDepartment.Designer.vb">
       <DependentUpon>EditDepartment.vb</DependentUpon>
     </Compile>
@@ -137,10 +160,10 @@
     <Compile Include="EditStudent.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formUpload.Designer.vb">
-      <DependentUpon>formUpload.vb</DependentUpon>
+    <Compile Include="FormUpload.Designer.vb">
+      <DependentUpon>FormUpload.vb</DependentUpon>
     </Compile>
-    <Compile Include="formUpload.vb">
+    <Compile Include="FormUpload.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -155,6 +178,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -165,6 +189,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ViewDepartment.Designer.vb">
+      <DependentUpon>ViewDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewInstructor.Designer.vb">
+      <DependentUpon>ViewInstructor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInstructor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStudent.Designer.vb">
+      <DependentUpon>ViewStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSubject.Designer.vb">
+      <DependentUpon>ViewSubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSubject.vb">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -183,8 +231,8 @@
     <EmbeddedResource Include="EditStudent.resx">
       <DependentUpon>EditStudent.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formUpload.resx">
-      <DependentUpon>formUpload.vb</DependentUpon>
+    <EmbeddedResource Include="FormUpload.resx">
+      <DependentUpon>FormUpload.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyLoginForm.resx">
       <DependentUpon>MyLoginForm.vb</DependentUpon>
@@ -195,8 +243,21 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewDepartment.resx">
+      <DependentUpon>ViewDepartment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewInstructor.resx">
+      <DependentUpon>ViewInstructor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStudent.resx">
+      <DependentUpon>ViewStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSubject.resx">
+      <DependentUpon>ViewSubject.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -240,6 +301,18 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
